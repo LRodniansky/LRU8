@@ -46,7 +46,15 @@ make
 After building, you can run the test program by executing the generated executable test_lru8.
 
 ## Compatibility
+
 LRU8 is compatible with both Unix and Windows systems. It utilizes standard C++ features and should work with any compliant C++ compiler.
+
+LRU8 has been tested and verified to work on the following platforms:
+
+- Red Hat Enterprise Linux 7 (el7.x86_64)
+- Red Hat Enterprise Linux 9 (el9.x86_64)
+- CentOS 7 (el7.x86_64)
+
 
 ## Contributing
 Contributions to LRU8 are welcome! If you find a bug or have an enhancement idea, feel free to open an issue or submit a pull request on GitHub.
