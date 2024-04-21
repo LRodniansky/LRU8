@@ -44,6 +44,15 @@ cmake ..
 make
 ```
 After building, you can run the test program by executing the generated executable test_lru8.
+When you run the test program, you should see output similar to the following:
+
+```bash
+> ./test_lru8 
+_data[1] does not exist.
+_data[1] exists.
+_data[1]=C,_data[5]=5, _data[10]=A, data[11]=B
+_strings["one"]=2
+```
 
 ## Compatibility
 
