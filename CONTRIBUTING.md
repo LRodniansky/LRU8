@@ -8,13 +8,15 @@ Thank you for considering contributing to LRU8! Contributions are welcome and ap
 
 2. **Clone the Repository**: Clone the forked repository to your local machine using the following command:
 
-git clone https://github.com/LRodniansky/LRU8.git
+  `git clone https://github.com/your-username/LRU8.git`
+
+    Replace `your-username` with your GitHub username.
 
 3. **Create a Branch**: Create a new branch for your contribution:
 
-git checkout -b feature/new-feature
+  `git checkout -b feature/new-feature`
 
-Replace `feature/new-feature` with a descriptive name for your branch.
+    Replace `feature/new-feature` with a descriptive name for your branch.
 
 4. **Make Changes**: Make your desired changes to the codebase.
 
@@ -22,12 +24,11 @@ Replace `feature/new-feature` with a descriptive name for your branch.
 
 6. **Commit Your Changes**: Commit your changes with a descriptive commit message:
 
-git commit -am "Add new feature"
+  `git commit -am "Add new feature"`
 
 7. **Push Changes**: Push your changes to your forked repository:
 
-git push origin feature/new-feature
-
+  `git push origin feature/new-feature`
 
 8. **Create a Pull Request**: Go to the [Pull Requests](../../pulls) tab of the original repository and click on "New Pull Request". Follow the prompts to create a new pull request with your changes.
 
