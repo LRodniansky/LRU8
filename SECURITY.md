@@ -4,7 +4,7 @@
 
 At LRU8, we take security seriously. If you believe you have found a security vulnerability in our project, please help us by responsibly disclosing the issue to us.
 
-To report a security vulnerability, please email us directly at [leon@2leon.com](mailto:leon@2leon.com). Please refrain from posting the issue in our public GitHub repository or elsewhere until we have had a chance to address it.
+To report a security vulnerability, please email us directly at [komuto@gmail.com](mailto:komuto@gmail.com). Please refrain from posting the issue in our public GitHub repository or elsewhere until we have had a chance to address it.
 
 When reporting security vulnerabilities, please include the following details:
 
