@@ -1,6 +1,6 @@
 # LRU8
 
-LRU8 is a lightweight and efficient implementation of a "Least Recently Used" (LRU) cache designed for 64-bit machines. It provides a fast and simple way to manage up to 8 elements in memory, optimizing performance by efficiently handling data access patterns.
+LRU8 is a lightweight and efficient implementation of a "Least Recently Used" (LRU) cache designed for 64-bit machines. It provides a fast and simple way to manage up to 8 elements in memory, using a minimalist approach without relying on standard C++ libraries.
 
 ## Features
 
