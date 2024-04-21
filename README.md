@@ -9,6 +9,8 @@ LRU8 is a lightweight and efficient implementation of a "Least Recently Used" (L
 - **Fast Access**: Designed for speed, LRU8 provides fast access to cached elements, minimizing latency and improving application performance.
 
 - **Cross-Platform Compatibility**: LRU8 is designed to be compatible with both Unix and Windows systems, making it versatile for a wide range of applications.
+  
+- **Thread safety**: Developers should ensure thread safety when using LRU8 in multithreaded environments.
 
 ## Usage
 
