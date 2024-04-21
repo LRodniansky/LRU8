@@ -43,6 +43,12 @@ Thank you for considering contributing to LRU8! Contributions are welcome and ap
 
 If you encounter any bugs, issues, or have feature requests, please [open an issue](../../issues) on GitHub. Provide as much detail as possible, including steps to reproduce the issue and any relevant error messages.
 
+## Conduct
+
+We expect all contributors to adhere to our [Code of Conduct](./CODE_OF_CONDUCT.md) when participating in our community, both online and offline.
+
+## License
+
 ## Community
 
 Join the conversation and discuss LRU8 with other developers:
