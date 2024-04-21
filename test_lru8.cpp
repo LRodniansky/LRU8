@@ -4,7 +4,7 @@
 int main()
 {
 
-	LRDN::LRU8<uint64_t,char> _data;
+	LRDN::LRU8<std::uint64_t,char> _data;
 
 	_data[1] = '1';
 	_data[2] = '2';
