@@ -53,7 +53,7 @@ int main()
 	char &l4 = _data[1];	// Reference to empty value. Element 4 evicted.
 	l4 = 'C';		// Now data[1] == 'C'.
 
-	if (_data.exists(1))	// Ley 1 exists. Element 1 was added before.
+	if (_data.exists(1))	// Key 1 exists. Element 1 was added before.
 		printf("_data[1] exists.\n");
 
 	// _data[1] == 'C', _data[5] == '5', _data[10] == 'A', _data[11] == 'B'
