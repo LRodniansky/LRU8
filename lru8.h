@@ -90,13 +90,11 @@ public:
     virtual ~LRU8() {}
 
     std::size_t size() const {
-        return 8U;
+        return 8UL;
     }
 
     bool exists(const Key &k) const {
-        int idx = find(k);
-
-        return (idx >= 0);
+        return (find(k) >= 0);
     }
 
     Value &operator[](const Key &k) {
