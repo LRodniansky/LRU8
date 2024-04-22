@@ -28,7 +28,7 @@ SOFTWARE.
 int main()
 {
 
-	LRDN::LRU8<std::uint64_t,char> _data;
+	LRDN::LRU8<std::uint64_t,char> _data;	// Key type std::uint64_t.
 
 	_data[1] = '1';
 	_data[2] = '2';
@@ -37,30 +37,30 @@ int main()
 	_data[5] = '5';
 	_data[6] = '6';
 	_data[7] = '7';
-	_data[8] = '8';		// element 1 evicted.
-	_data[9] = '9';		// element 2 evicted.
-	_data[10] = 'A';	// element 3 evicted.
+	_data[8] = '8';	
+	_data[9] = '9';		// element 1 evicted.
+	_data[10] = 'A';	// element 2 evicted.
 
 	char l1 = _data[5];	// Value '5'.
 	char l2 = _data[10];	// Value 'A'.
 	
-	char &l3 = _data[11];	// Reference to empty value. Element 4 evicted.
+	char &l3 = _data[11];	// Reference to empty value. Element 3 evicted.
 	l3 = 'B';		// Now _data[11] == 'B'.
 
 	if (!_data.exists(1))	// Key 1 not exists because element 1 was previously evicted.
 		printf("_data[1] does not exist.\n");
 
-	char &l4 = _data[1];	// Reference to empty value. Element 6 evicted.
+	char &l4 = _data[1];	// Reference to empty value. Element 4 evicted.
 	l4 = 'C';		// Now data[1] == 'C'.
 
-	if (_data.exists(1))	// Ley 1 exists. Element 1 just added.
+	if (_data.exists(1))	// Ley 1 exists. Element 1 was added before.
 		printf("_data[1] exists.\n");
 
 	// _data[1] == 'C', _data[5] == '5', _data[10] == 'A', _data[11] == 'B'
 	printf("_data[1]=%c,_data[5]=%c, _data[10]=%c, data[11]=%c\n",_data[1], l1, l2,_data[11]);
 
 
-	LRDN::LRU8<std::string, int> _strings;
+	LRDN::LRU8<std::string, int> _strings;	// Key type std::string.
 
 	_strings["one"] = 1;		// Element with key "one" is in LRU with value 1.
 	_strings["one"] = 2;		// Same element with key "one" is in LRU with value 2.
