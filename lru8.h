@@ -22,6 +22,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+#ifndef _lrdn_lru8_h_
+#define _lrdn_lru8_h_
+
 #include <cstdint>
 #include <cstddef>
 
@@ -114,3 +117,4 @@ public:
 
 } // namespace LRDN
 
+#endif

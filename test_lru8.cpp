@@ -44,16 +44,16 @@ int main()
 	char l1 = _data[5];	// Value '5'.
 	char l2 = _data[10];	// Value 'A'.
 	
-	char &l3 = _data[11];	// Reference to empty value. Element 3 evicted.
+	char &l3 = _data[11];	// Reference to empty value. Element 3 evicted. Element 11 inserted.
 	l3 = 'B';		// Now _data[11] == 'B'.
 
-	if (!_data.exists(1))	// Key 1 not exists because element 1 was previously evicted.
+	if (!_data.exists(1))	// Key 1 does not exist because element 1 was previously evicted.
 		printf("_data[1] does not exist.\n");
 
-	char &l4 = _data[1];	// Reference to empty value. Element 4 evicted.
+	char &l4 = _data[1];	// Reference to empty value. Element 4 evicted. Element 1 inserted.
 	l4 = 'C';		// Now data[1] == 'C'.
 
-	if (_data.exists(1))	// Key 1 exists. Element 1 was added before.
+	if (_data.exists(1))	// Key 1 exists. Element 1 was inserted before.
 		printf("_data[1] exists.\n");
 
 	// _data[1] == 'C', _data[5] == '5', _data[10] == 'A', _data[11] == 'B'
