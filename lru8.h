@@ -68,7 +68,7 @@ private:
     }
 
     int least_used_slot() {
-        if ((_lru_matrix >> 56) == 0)
+        if 	((_lru_matrix & 0xFF00000000000000ULL) == 0)
             return 0;
         else if ((_lru_matrix & 0x00FF000000000000ULL) == 0)
             return 1;
